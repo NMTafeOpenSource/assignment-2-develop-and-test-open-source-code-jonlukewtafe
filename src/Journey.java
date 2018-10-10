@@ -1,5 +1,3 @@
-package vehiclestarter;
-
  
 public class Journey {
 	
