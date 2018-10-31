@@ -1,6 +1,6 @@
 
 public class FuelPurchase {
-	private double	fuelEconomy;
+	private double fuelEconomy;
         private double litres = 0;
         private double cost = 0;
 
