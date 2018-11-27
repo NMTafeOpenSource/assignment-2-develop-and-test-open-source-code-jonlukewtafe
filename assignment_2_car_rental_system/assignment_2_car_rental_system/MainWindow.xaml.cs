@@ -60,19 +60,21 @@ namespace assignment_2_car_rental_system
             if (ve != null && txtBox_AddKilometers.Text != null)
             {
                 ve.addKilometers(Int32.Parse(txtBox_AddKilometers.Text));
-                txtBlock_OdometerReading.Text = ve.OdometerReading.ToString();
                 // TODO: Auto update ListView to show updated OdometerReading 
+                txtBlock_OdometerReading.Text = ve.OdometerReading.ToString();
+
+
+                
             }
         }
 
         private void btn_AddFuel_Click(object sender, RoutedEventArgs e)
         {
             Vehicle ve = (Vehicle)listView_vehicles.SelectedItem;
-
+            
             if (ve != null && txtBox_AddKilometers.Text != null)
             {
-                ve.FuelPurchase.purchaseFuel(Int32.Parse(txtBox_FuelLitres.Text), Int32.Parse(txtBox_Cost.Text));
-                // TODO: Auto update ListView to show updated OdometerReading 
+                ve.FuelPurchase.purchaseFuel(Int32.Parse(txtBox_FuelLitres.Text), Int32.Parse(txtBox_Cost.Text)); 
             }
         }
     }
