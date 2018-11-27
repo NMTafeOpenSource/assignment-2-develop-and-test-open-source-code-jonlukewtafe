@@ -11,8 +11,8 @@ namespace assignment_2_car_rental_system
         // Constant to indicate that the vehicle needs to be serviced every 10,000km
         public static int SERVICE_KILOMETER_LIMIT = 10000;
 
-        private int lastServiceOdometerKm = 0;
-        private int serviceCount = 0;
+        public int lastServiceOdometerKm { get; set; }
+        public int serviceCount { get; set; }
         private DateTime lastServiceDate = DateTime.Now;
 
         // return the last service
@@ -45,11 +45,10 @@ namespace assignment_2_car_rental_system
          * 
          * @return the number of services needed per SERVICE_KILOMETER_LIMIT
          */
-        /*public int getTotalScheduledServices()
+        public int getTotalScheduledServices()
         {
            double a = lastServiceOdometerKm / SERVICE_KILOMETER_LIMIT;
-
-            return (int)Math.Floor(lastServiceOdometerKm / SERVICE_KILOMETER_LIMIT);
-        }*/
+           return (int)Math.Floor(a);
+        }
     }
 }
